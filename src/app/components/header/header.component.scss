@@ -2,7 +2,9 @@
 @import "../../../styles.scss";
 
 header {
-    background-color: #070707;
+    background-color: $background;
+    border-bottom: 1px dashed #fff;
+    padding: 10px 0;
 }
 
 .navbar .container .navbar-brand img {
@@ -13,8 +15,7 @@ header {
     border-radius: 5px;
 }
 
-.offcanvas {
-    .offcanvas-body {
+.navbar {
         a {
             font-size: 14px;
             font-weight: 600;
@@ -44,5 +45,4 @@ header {
                 }
             }
         }
-    }
 }
