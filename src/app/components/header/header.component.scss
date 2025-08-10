@@ -1,8 +1,48 @@
-.spacer {
-    flex: 1 1 auto;
+// global scss 
+@import "../../../styles.scss";
+
+header {
+    background-color: #070707;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 20px;
+.navbar .container .navbar-brand img {
+    height: 35px;
+    width: auto;
+    background-color: #ffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.offcanvas {
+    .offcanvas-body {
+        a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        a.alltool {
+            background-color: transparent;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 5px 12px;
+            border-radius: 3px;
+        }
+
+        a.contactbtn {
+            background-color: $primary;
+            text-decoration: none;
+            padding: 5px 12px;
+            border-radius: 3px;
+        }
+
+        ul {
+            li {
+                a {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
