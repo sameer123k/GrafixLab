@@ -1,0 +1,29 @@
+<div class="palette-container">
+  <h1>🎨 Custom Color Palette Generator</h1>
+  <p>Paste a HEX color & explore multiple palettes</p>
+
+  <!-- Input + Buttons -->
+  <div class="input-section">
+    <input [(ngModel)]="userColor" type="text" placeholder="Enter HEX (e.g., #3498db)" />
+    <button (click)="generateFromUserColor()">🎯 Generate</button>
+    <button (click)="shufflePalettes()" [disabled]="palettes.length === 0">🔀 Shuffle</button>
+    <button (click)="downloadJSON()" [disabled]="palettes.length === 0">⬇️ JSON</button>
+    <button (click)="downloadHEX()" [disabled]="palettes.length === 0">⬇️ HEX</button>
+  </div>
+
+  <!-- Message -->
+  <p *ngIf="message" class="message">{{ message }}</p>
+
+  <!-- Palettes -->
+  <div class="palette">
+    <div class="palette-card" *ngFor="let shades of palettes">
+      <div 
+        class="shade"
+        *ngFor="let color of shades"
+        [style.background]="color"
+        (click)="copyColor(color)">
+        <span [style.color]="getContrast(color)">{{ color }}</span>
+      </div>
+    </div>
+  </div>
+</div>
