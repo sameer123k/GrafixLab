@@ -1,5 +1,7 @@
 // global scss 
-@import "../../../styles.scss";
+$primary: #E66B27;
+$secondary:#1E4F7B;
+$background:#070707;
 
 header {
     background-color: $background;
@@ -42,6 +44,11 @@ header {
                 a {
                     font-size: 14px;
                     font-weight: 600;
+                }
+            }
+            li.active{
+                a{
+                color: #E66B27;
                 }
             }
         }

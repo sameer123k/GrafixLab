@@ -12,17 +12,16 @@
       </button>
       <div class="offcanvas-body collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" [ngClass]="homeSet == 'Home'? 'active': ' '" (click)="toggleActive('Home')">
             <a class="nav-link active" routerLink="/" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Home</a>
-          </li> 
-          <li class="nav-item dropdown">
-            <a class="nav-link" routerLink="/colorpallete" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Color Tools</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link active" role="button" data-bs-toggle="dropdown" aria-expanded="false">Image
-              Tools</a>
+          <li class="nav-item dropdown" [ngClass]="homeSet == 'colorpallete'? 'active': ' '" (click)="toggleActive('colorpallete')">
+            <a class="nav-link" routerLink="/colorpallete" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Color Palette</a>
+          </li>
+          <li class="nav-item dropdown" [ngClass]="homeSet == 'image-format-changer'? 'active': ' '" (click)="toggleActive('image-format-changer')">
+            <a class="nav-link active" role="button" routerLink="image-format-changer" data-bs-toggle="dropdown" aria-expanded="false">Image Format Changer</a>
           </li>
           <li class="nav-item dropdown dropdown-fullwidth">
             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">UI Design

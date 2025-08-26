@@ -8,13 +8,28 @@ export default {
   {
     "renderMode": 2,
     "route": "/"
+  },
+  {
+    "renderMode": 2,
+    "route": "/colorpallete"
+  },
+  {
+    "renderMode": 2,
+    "route": "/image-format-changer"
+  },
+  {
+    "renderMode": 2,
+    "redirectTo": "/",
+    "route": "/**"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 21313, hash: '7f7c6c05755bb23595f84a358cb9c8715a6ea31871198e3a10f44d10eb42b59a', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 17204, hash: '421b40b09117620d1701ea8ed5ca8f73e71542e53f65e1a44cd491fec606473e', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 36591, hash: '7d4d22f19682280a260efe147e1c45b454ae93a95c2ca48077c55b12c3d9dcec', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'styles-3XTWVHQM.css': {size: 231030, hash: 'dfgbQjrZA/E', text: () => import('./assets-chunks/styles-3XTWVHQM_css.mjs').then(m => m.default)}
+    'index.csr.html': {size: 5810, hash: '6cb9f9df501c37d17ee614b0e28555411aa7737cea6ac47a7146af3f72ede161', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1782, hash: 'c8f1dab7082d1826ecba5ea654b516dd6be9b14470ad473e49ccf72e0c4d09a0', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'colorpallete/index.html': {size: 20660, hash: 'c6fa0a043fe90d7417729ccd6e8f64a759c61e9877662a3f591f25d82faa3a68', text: () => import('./assets-chunks/colorpallete_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 21316, hash: '488999c2d07578c94ef499c3572dfae589f6b54e4e1704e6aee40312851dfdc1', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'image-format-changer/index.html': {size: 20597, hash: 'd41bddc9106c76eeefad0e81300b27ac9b9a6aaa1b865920962496064555fd9d', text: () => import('./assets-chunks/image-format-changer_index_html.mjs').then(m => m.default)},
+    'styles-SDBZV4GP.css': {size: 230949, hash: 'Ph+9IYpH6Nk', text: () => import('./assets-chunks/styles-SDBZV4GP_css.mjs').then(m => m.default)}
   },
 };
