@@ -1,0 +1,32 @@
+<div class="image-format-changer-card">
+  <h2>🖼️ Image Format Changer</h2>
+
+  <label class="file-input-label">
+    <input type="file" (change)="onFileSelected($event)" accept="image/*" />
+    📁 Choose Image
+  </label>
+
+  <div *ngIf="previewUrl" class="preview-container">
+    <img [src]="previewUrl" [alt]="fileName" class="preview" />
+    <p class="filename">{{ fileName }}</p>
+  </div>
+
+  <div class="format-select-group">
+    <label for="formatSelect">Choose format:</label>
+<select [(ngModel)]="selectedFormat">
+  <option *ngFor="let format of formats" [value]="format">
+    {{ format.toUpperCase() }}
+  </option>
+</select>
+  </div>
+
+  <p *ngIf="selectedFormat">Selected Format: <strong>{{ selectedFormat.toUpperCase() }}</strong></p>
+
+  <button
+    class="download-btn"
+    (click)="downloadImage()"
+    [disabled]="!selectedFormat || !imageFile"
+  >
+    ⬇️ Download Image
+  </button>
+</div>
