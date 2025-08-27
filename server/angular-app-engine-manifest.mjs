@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://sameer123k.github.io/grafixlab',
+  basePath: '/',
   supportedLocales: {
   "en-US": ""
 },
