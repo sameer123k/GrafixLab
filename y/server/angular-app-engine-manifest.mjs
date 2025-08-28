@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: 'GrafixLab',
   supportedLocales: {
   "en-US": ""
 },

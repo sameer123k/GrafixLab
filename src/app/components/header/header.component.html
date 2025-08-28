@@ -16,16 +16,19 @@
             <a class="nav-link active" routerLink="/" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Home</a>
           </li>
-          <li class="nav-item dropdown" [ngClass]="homeSet == 'colorpallete'? 'active': ' '" (click)="toggleActive('colorpallete')">
+          <li class="nav-item dropdown" [ngClass]="homeSet == 'colorpallete'? 'active': ' '"
+            (click)="toggleActive('colorpallete')">
             <a class="nav-link" routerLink="/colorpallete" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Color Palette</a>
           </li>
-          <li class="nav-item dropdown" [ngClass]="homeSet == 'image-format-changer'? 'active': ' '" (click)="toggleActive('image-format-changer')">
-            <a class="nav-link active" role="button" routerLink="image-format-changer" data-bs-toggle="dropdown" aria-expanded="false">Image Format Changer</a>
+          <li class="nav-item dropdown" [ngClass]="homeSet == 'image-format-changer'? 'active': ' '"
+            (click)="toggleActive('image-format-changer')">
+            <a class="nav-link active" role="button" routerLink="image-format-changer" data-bs-toggle="dropdown"
+              aria-expanded="false">Image Format Changer</a>
           </li>
           <li class="nav-item dropdown dropdown-fullwidth">
-            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">UI Design
-              Tools</a>
+            <a class="nav-link" routerLink="/loader-create" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Loader Create</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">File & Data

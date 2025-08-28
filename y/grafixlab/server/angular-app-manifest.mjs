@@ -2,34 +2,34 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/',
+  baseHref: 'GrafixLab',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/"
+    "route": "/GrafixLab"
   },
   {
     "renderMode": 2,
-    "route": "/colorpallete"
+    "route": "/GrafixLab/colorpallete"
   },
   {
     "renderMode": 2,
-    "route": "/image-format-changer"
+    "route": "/GrafixLab/image-format-changer"
   },
   {
     "renderMode": 2,
-    "redirectTo": "/",
-    "route": "/**"
+    "redirectTo": "/GrafixLab",
+    "route": "/GrafixLab/**"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 5690, hash: '37ca19b8feae50b7cf19f7f79d8a12eea4936e541cb70e29064d000cfeebb665', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1662, hash: '46f45d226332be799b1aa9f80688a2821eb187ee932c45b2fba84a56c63b4d60', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'colorpallete/index.html': {size: 20540, hash: '086c9635d890b8a7b4f8793cd0c4f9dd5b90a0b12d6ed8fb5b9b083b4c480fcf', text: () => import('./assets-chunks/colorpallete_index_html.mjs').then(m => m.default)},
-    'index.html': {size: 21196, hash: 'a9f720d01769470457971bf844502f81da196dfed2fb78a8aaca1be3a9ed5ef8', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'image-format-changer/index.html': {size: 20477, hash: '4e6525f81a8e6b2a08671ea42130f5f407f17ae9e278517549bbf982659c819c', text: () => import('./assets-chunks/image-format-changer_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 5698, hash: 'f8b797e85ba398f351df27bdfdb3920ec2142a3f267978defe6122d062a45b76', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1670, hash: '5a04b6fdf5dbf49c4f5ea0f2de80f21b56b7dbbcf112f9aba70d5edf5d700421', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.html': {size: 21240, hash: '7075977b0e2c674db649e2ab16e708c0d1c390ab42a566a51f13cd98c1cfe85d', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'colorpallete/index.html': {size: 21240, hash: '7075977b0e2c674db649e2ab16e708c0d1c390ab42a566a51f13cd98c1cfe85d', text: () => import('./assets-chunks/colorpallete_index_html.mjs').then(m => m.default)},
+    'image-format-changer/index.html': {size: 21240, hash: '7075977b0e2c674db649e2ab16e708c0d1c390ab42a566a51f13cd98c1cfe85d', text: () => import('./assets-chunks/image-format-changer_index_html.mjs').then(m => m.default)},
     'styles-SDBZV4GP.css': {size: 230949, hash: 'Ph+9IYpH6Nk', text: () => import('./assets-chunks/styles-SDBZV4GP_css.mjs').then(m => m.default)}
   },
 };
