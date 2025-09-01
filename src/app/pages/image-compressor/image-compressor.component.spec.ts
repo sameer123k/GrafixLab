@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoaderCreateComponent } from './loader-create.component';
+import { ImageCompressorComponent } from './image-compressor.component';
 
-describe('LoaderCreateComponent', () => {
-  let component: LoaderCreateComponent;
-  let fixture: ComponentFixture<LoaderCreateComponent>;
+describe('ImageCompressorComponent', () => {
+  let component: ImageCompressorComponent;
+  let fixture: ComponentFixture<ImageCompressorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LoaderCreateComponent]
+      imports: [ImageCompressorComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LoaderCreateComponent);
+    fixture = TestBed.createComponent(ImageCompressorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

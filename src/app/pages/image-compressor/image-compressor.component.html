@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Image Compressor</h2>
+
+  <input type="file" (change)="onFileChange($event)" accept="image/*" />
+
+  <div *ngIf="originalImageFile" class="image-info">
+    <h3>Original Image</h3>
+    <img [src]="originalImageUrl" alt="Original Image" />
+    <p>Size: {{ originalSizeKB | number:'1.0-2' }} KB</p>
+  </div>
+
+  <button (click)="compressImage()" [disabled]="!originalImageFile || isCompressing">
+    {{ isCompressing ? 'Compressing...' : 'Compress Image' }}
+  </button>
+
+  <div *ngIf="compressedImageFile" class="image-info">
+    <h3>Compressed Image</h3>
+    <img [src]="compressedImageUrl" alt="Compressed Image" />
+    <p>Size: {{ compressedSizeKB | number:'1.0-2' }} KB</p>
+
+    <button (click)="downloadCompressed()">Download Compressed Image</button>
+  </div>
+</div>
