@@ -2,6 +2,7 @@
   "routes": {
     "/GrafixLab": {},
     "/GrafixLab/colorpallete": {},
+    "/GrafixLab/image-compressor": {},
     "/GrafixLab/image-format-changer": {}
   }
 }
