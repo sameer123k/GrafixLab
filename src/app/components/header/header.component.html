@@ -26,8 +26,10 @@
             <a class="nav-link active" role="button" routerLink="image-format-changer" data-bs-toggle="dropdown"
               aria-expanded="false">Image Format Changer</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" routerLink="image-compressor" role="button" data-bs-toggle="dropdown" aria-expanded="false">Image Compressor</a>
+          <li class="nav-item dropdown" [ngClass]="homeSet == 'image-compressor'? 'active': ' '"
+            (click)="toggleActive('image-compressor')">
+            <a class="nav-link" routerLink="image-compressor" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Image Compressor</a>
           </li>
         </ul>
         <div class="mt-3 mt-lg-0 d-flex align-items-center">
